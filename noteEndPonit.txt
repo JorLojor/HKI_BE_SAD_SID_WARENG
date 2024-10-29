@@ -1,0 +1,72 @@
+user api
+// get all user : http://localhost:3555/api/v1/user/get
+// get user by id : http://localhost:3555/api/v1/user/get/:id
+// post user : http://localhost:3555/api/v1/user/post-user
+// post many user : http://localhost:3555/api/v1/user/post-many-user
+// update user by id : http://localhost:3555/api/v1/user/update/:id
+// delete user by id : http://localhost:3555/api/v1/user/delete/:id
+
+warga api
+get all warga : http://localhost:3555/api/v1/warga/get
+get warga by id : http://localhost:3555/api/v1/warga/get/:id
+post warga : http://localhost:3555/api/v1/warga/post-warga
+post many warga : http://localhost:3555/api/v1/warga/post-many-warga
+get warga by id : http://localhost:3555/api/v1/warga/get/:id
+update warga by id : http://localhost:3555/api/v1/warga/update/:id
+delete warga by id : http://localhost:3555/api/v1/warga/delete/:id
+create surat acara : http://localhost:3555/api/v1/warga/create/suratAcara/:id
+pengajuan surat acara : http://localhost:3555/api/v1/warga/pengajuan/SuratAcara/:userId/:suratAcaraId
+delete surat acara pdf : http://localhost:3555/api/v1/warga/delete/suratAcara/:userId/:suratAcaraId
+
+rt api
+get all rt : http://localhost:3555/api/v1/rt/get
+create rt : http://localhost:3555/api/v1/rt/create
+post many rt : http://localhost:3555/api/v1/rt/post-many-rt
+update rt : http://localhost:3555/api/v1/rt/update/:id
+delete rt : http://localhost:3555/api/v1/rt/delete/:id
+persetujuan surat acara : http://localhost:3555/api/v1/rt/persetujuan-surat-acara/:rtId/:suratAcaraId
+
+rw api 
+get all rw : http://localhost:3555/api/v1/rw/get
+get rw by id : http://localhost:3555/api/v1/rw/get/:id
+post rw : http://localhost:3555/api/v1/rw/post
+post many rw : http://localhost:3555/api/v1/rw/post-many-rw
+update rw : http://localhost:3555/api/v1/rw/update/:id
+delete rw : http://localhost:3555/api/v1/rw/delete/:id
+persetujuan rw : http://localhost:3555/api/v1/rw//persetujuan-surat-acara/:rwId/:suratAcaraId
+
+perangkat desa api
+get all : http://localhost:3555/api/v1/perangkatDesa/get
+get by id : http://localhost:3555/api/v1/perangkatDesa/get/:id
+create : http://localhost:3555/api/v1/perangkatDesa/create
+update : http://localhost:3555/api/v1/perangkatDesa/update/:id
+delete : http://localhost:3555/api/v1/perangkatDesa/delete/:id
+submit : http://localhost:3555/api/v1/perangkatDesa/submit/:id
+
+
+kepala desa api
+// get whit role : http://localhost:3555/api/v1/pimpinanDesa/get/:role
+// create : http://localhost:3555/api/v1/pimpinanDesa/create
+// update : http://localhost:3555/api/v1/pimpinanDesa/update/:role
+// delete : http://localhost:3555/api/v1/pimpinanDesa/delete/:id
+// submit : http://localhost:3555/api/v1/pimpinanDesa/submit/:kadesId/:suratAcaraId
+// get all : http://localhost:3555/api/v1/pimpinanDesa/get/
+
+
+admin api
+
+// note :
+login : http://localhost:3555/api/v1/warga/login
+register : http://localhost:3555/api/v1/warga/register
+
+
+// post admin : http://localhost:3555/api/v1/admin/post-admin
+// get admin by id : http://localhost:3555/api/v1/admin/get-admin/:id
+// update admin by id : http://localhost:3555/api/v1/admin/update-admin/:id
+// delete admin by id : http://localhost:3555/api/v1/admin/delete-admin/:id
+
+// make warga : http://localhost:3555/api/v1/admin/makeWarga/:idUser
+// make rt : http://localhost:3555/api/v1/admin/makeRt/:idUser
+// make rw : http://localhost:3555/api/v1/admin/makeRw/:idUser
+// make perangkat desa : http://localhost:3555/api/v1/admin/makePerangkatdesa/:idUser
+// make pimpinan desa : http://localhost:3555/api/v1/admin/makePimpinandesa/:idUser
