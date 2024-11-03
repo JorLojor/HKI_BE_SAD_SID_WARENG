@@ -17,6 +17,9 @@ app.use(express.urlencoded({ extended: true }));
 const api = require('./routers');
 const morgan = require('morgan');
 app.use(morgan('combined'));
+app.set('trust proxy', true);
+
+
 app.use('/api/v1', api);
 
 
