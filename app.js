@@ -8,13 +8,15 @@ app.use(cors());
 
 require('dotenv').config();
 
-app.use('/assets',express.static('assets')); 
+app.use('/assets', express.static('assets'));
 // http://localhost:3555/assets/1.jpg
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const api = require('./routers'); 
+const api = require('./routers');
+const morgan = require('morgan');
+app.use(morgan('combined'));
 app.use('/api/v1', api);
 
 
